@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+</head>
+<body>
+    <h1>Weather App</h1>
+    <form action="/submit" method="post">
+        <label for="city">City Name:</label><br>
+        <input type="text" id="city" name="city"><br>
+        
+        <label for="unit">Unit:</label><br>
+        <select id="unit" name="unit">
+            <option value="metric">Metric</option>
+            <option value="imperial">Imperial</option>
+            <option value="standard">Standard</option>
+        </select><br>
+        
+        <label for="api_key">API Key:</label><br>
+        <input type="text" id="api_key" name="api_key"><br>
+        
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
