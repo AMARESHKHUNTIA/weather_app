@@ -13,7 +13,7 @@ def weather_report():
     url='https://api.openweathermap.org/data/2.5/weather'
     param={
         'q':request.form.get('city'),
-        'appid':request.form.get('api_key'),
+        'appid':"beb88d95997583a59b470c1ddbddce0e",
         'units':request.form.get('unit')
     }
     response=requests.post(url=url,params=param)
